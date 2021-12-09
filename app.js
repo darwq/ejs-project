@@ -33,7 +33,7 @@ let workList = [];
 app.get("/", (req, res) => {
   // ASSIGNING NEW VALUES TO RESPONSE LIST VARIABLE
 
-  response = ["Buy food", "Cook food", "Eat food"];
+  // response = ["Buy food", "Cook food", "Eat food"];
 
   // RENDERING THE FILE
 
