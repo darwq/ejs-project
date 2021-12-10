@@ -1,0 +1,28 @@
+<%- include("../Layout/header") -%>
+<h1>You got to the first page!</h1>
+
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo porro
+  nulla similique blanditiis corporis earum nostrum corrupti, at alias quibusdam
+  eius aut, fugit necessitatibus optio illum maiores magnam voluptatem?
+</p>
+
+<form action="/" method="post">
+  <input type="text" name="setTitle" placeholder="set new blog" />
+  <input type="text" name="setParagraph" placeholder="set Paragraph" />
+  <button type="submit" name="sbtButton" value="submit">Submit form</button>
+</form>
+
+
+<% for(let i = 0; i < divName.length; i++){ %>
+<div class="container">
+  <h1><%= divName[i] %></h1>
+  <% if(paragraphContent[i].length >= 100){ %>
+  <p><%= paragraphContent[i].slice(0,100) %>...</p>
+  <a href="/<%= divName[i].replace(/\s+/g, "-") %>">Read More</a>
+  <% } else { %>
+  <p><%= paragraphContent[i] %></p>
+  <% } %>
+</div>
+<% } %> 
+<%- include("../Layout/footer") -%>

@@ -1,0 +1,56 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  margin: 5% 0 2%;
+  font-weight: 450;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+form {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5% 0 0;
+}
+
+form * {
+  margin: 2%;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.container h1,
+p {
+  text-align: left;
+}
+
+.container p {
+  display: inline-block;
+}
+
+.container a {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.fluid-container {
+  padding: 1rem 3rem;
+}
+
+.fluid-container h1 {
+  text-align: center;
+}
